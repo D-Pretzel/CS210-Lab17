@@ -29,3 +29,22 @@ void reversePrint(int array[], int size){
         printf("%i\n", array[i]);
     }
 }
+
+int countVowels(char word[]){
+    int count = 0;
+    for (int i = 0; i < strlen(word); i++) {
+        switch (word[i]) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'y':
+                count++;
+                break;
+            default:
+                break;
+        }
+    }
+    return count;
+}

@@ -11,10 +11,13 @@
 #define LAB17FUNCTS_H
 
 #include <stdio.h>
+#include <string.h>
 
 //loadVals takes a pointer to an integer array
 int loadVals(int vals[]);
 
 void reversePrint(int array[], int size);
+
+int countVowels(char word[]);
 
 #endif
