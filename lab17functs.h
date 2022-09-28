@@ -25,4 +25,6 @@ int analyzeValues(double array[], int size);
 
 int performOperation(char operation, int first, int second);
 
+void getMinMax(int array[], int size, int* min, int* max);
+
 #endif
