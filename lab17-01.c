@@ -7,9 +7,11 @@
 * ===========================================================
 */
 
+#include "lab17functs.h"
+
 int main(void)
 {
-
+   int array[100];
+   reversePrint(array, loadVals(array));
    return 0;
-
 }
