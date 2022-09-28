@@ -23,4 +23,6 @@ int countVowels(char word[]);
 
 int analyzeValues(double array[], int size);
 
+int performOperation(char operation, int first, int second);
+
 #endif

@@ -73,3 +73,22 @@ int analyzeValues(double array[], int size){
     }
     return count;
 }
+
+int performOperation(char operation, int first, int second){
+    switch (operation) {
+        case '+':
+            return first + second;
+            break;
+        case '-':
+            return first - second;
+            break;
+        case '*':
+            return first * second;
+            break;
+        case '/':
+            return first / second;
+            break;
+        default:
+            return 0;
+    }
+}
