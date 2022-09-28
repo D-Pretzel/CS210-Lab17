@@ -48,3 +48,28 @@ int countVowels(char word[]){
     }
     return count;
 }
+
+int analyzeValues(double array[], int size){
+    //Returns how many how many values are within one standard deviation of the mean
+    double mean = 0;
+    double stdDev = 0;
+    double sum = 0;
+    double sumOfSquares = 0;
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+        sum += array[i];
+    }
+    mean = sum / size;
+    printf("The average for this array is: %f", mean);
+    for (int i = 0; i < size; i++) {
+        sumOfSquares += pow(array[i] - mean, 2);
+    }
+    stdDev = sqrt(sumOfSquares / size);
+    printf("The standard deviation for this array is: %f", stdDev);
+    for (int i = 0; i < size; i++) {
+        if (array[i] >= (mean - stdDev) && array[i] <= (mean + stdDev)) {
+            count++;
+        }
+    }
+    return count;
+}

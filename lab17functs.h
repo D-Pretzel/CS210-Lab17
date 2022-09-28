@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 //loadVals takes a pointer to an integer array
 int loadVals(int vals[]);
@@ -19,5 +20,7 @@ int loadVals(int vals[]);
 void reversePrint(int array[], int size);
 
 int countVowels(char word[]);
+
+int analyzeValues(double array[], int size);
 
 #endif
